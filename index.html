@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickSculpt | Авторские модели из LEGO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Brick<span>Sculpt</span></a>
+                <ul class="nav-links">
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#process">Процесс</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#order-form" class="btn-outline">Заказать</a></li>
+                </ul>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Авторские модели из LEGO</h1>
+            <p class="hero-subtitle">Уникальные скульптуры, созданные с вниманием к каждой детали. Эксклюзивно. Точно. Надолго.</p>
+            <a href="#gallery" class="btn-primary">Смотреть галерею</a>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Коллекция работ</h2>
+            <p class="section-subtitle">Каждая модель — уникальный проект с собственной историей</p>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="architecture">Архитектура</button>
+                <button class="filter-btn" data-filter="tech">Техника</button>
+                <button class="filter-btn" data-filter="fantasy">Фантастика</button>
+                <button class="filter-btn" data-filter="characters">Персонажи</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Модель 1 -->
+                <div class="model-card" data-category="architecture">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Архитектурная модель LEGO">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="1">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Современный небоскрёб</h3>
+                        <p>Модульная архитектура, 2200 деталей</p>
+                    </div>
+                </div>
+
+                <!-- Модель 2 -->
+                <div class="model-card" data-category="tech">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Техническая модель LEGO">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="2">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Космический корабль</h3>
+                        <p>Подвижные элементы, 1800 деталей</p>
+                    </div>
+                </div>
+
+                <!-- Модель 3 -->
+                <div class="model-card" data-category="fantasy">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Фантастическая модель LEGO">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="3">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Замок дракона</h3>
+                        <p>С подсветкой, 3500 деталей</p>
+                    </div>
+                </div>
+
+                <!-- Модель 4 -->
+                <div class="model-card" data-category="characters">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1562976542-47b1f4851c3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Персонаж LEGO">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="4">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Робот-гигант</h3>
+                        <p>Суставная механика, 1200 деталей</p>
+                    </div>
+                </div>
+
+                <!-- Модель 5 -->
+                <div class="model-card" data-category="architecture">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Архитектурная модель LEGO 2">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="5">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Старинный замок</h3>
+                        <p>Детализированный фасад, 2800 деталей</p>
+                    </div>
+                </div>
+
+                <!-- Модель 6 -->
+                <div class="model-card" data-category="tech">
+                    <div class="model-img">
+                        <img src="https://images.unsplash.com/photo-1632059368265-78c6cabd2336?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Техническая модель LEGO 2">
+                        <div class="model-overlay">
+                            <a href="#" class="view-details" data-id="6">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Гоночный автомобиль</h3>
+                        <p>Функциональные колеса, 950 деталей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс работы -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title">Как создаются модели</h2>
+            <p class="section-subtitle">4 ключевых этапа от идеи до готовой работы</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Концепция и эскиз</h3>
+                    <p>Обсуждаем вашу идею, создаём цифровой эскиз и подбираем цветовую гамму</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Подбор деталей</h3>
+                    <p>Ищем нужные элементы из коллекции 10 000+ деталей или заказываем специально</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Проектирование и сборка</h3>
+                    <p>Собираем модель с учётом прочности конструкции и эстетики</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Упаковка и доставка</h3>
+                    <p>Аккуратно упаковываем и отправляем готовую работу с инструкцией по уходу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заказа -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Обсудите ваш проект</h2>
+                    <p>Расскажите о своей идее, и я подготовлю индивидуальное предложение с расчётом стоимости и сроков.</p>
+                    <p><i class="fas fa-envelope"></i> order@bricksculpt.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+                    <p class="disclaimer">LEGO® является товарным знаком корпорации The LEGO Group, которая не спонсировала, не авторизовала и не одобряла этот сайт.</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Форма заказа</h3>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Интересующая модель</label>
+                            <select id="model" name="model">
+                                <option value="">Выберите из галереи</option>
+                                <option value="Современный небоскрёб">Современный небоскрёб</option>
+                                <option value="Космический корабль">Космический корабль</option>
+                                <option value="Замок дракона">Замок дракона</option>
+                                <option value="Другое">Другая модель (опишите ниже)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Детали заказа *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Опишите вашу идею, предпочтительный размер, бюджет и любые другие детали..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно деталей модели -->
+    <div id="model-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Контент подгружается через JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Brick<span>Sculpt</span></div>
+                <p>Авторские модели из LEGO © 2023. Все права на дизайн моделей защищены.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
